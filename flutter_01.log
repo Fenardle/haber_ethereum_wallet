@@ -1,0 +1,100 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter pub get
+
+## exception
+
+ProcessException: ProcessException: 页面文件太小，无法完成操作。
+
+Working directory: "D:\Haber\haber" (exists)
+pub env: {
+  "FLUTTER_ROOT": "D:\flutter",
+  "PUB_ENVIRONMENT": "vscode.dart-code:flutter_cli:get",
+  "PUB_CACHE": "C:\Users\Rod\AppData\Local\Pub\Cache",
+}
+
+  Command: D:\flutter\bin\cache\dart-sdk\bin\dart.EXE __deprecated_pub --directory . get --example
+
+```
+#0      _DefaultPub._runWithStdioInherited (package:flutter_tools/src/dart/pub.dart:445:9)
+<asynchronous suspension>
+#1      _DefaultPub.get (package:flutter_tools/src/dart/pub.dart:346:5)
+<asynchronous suspension>
+#2      PackagesGetCommand._runPubGet (package:flutter_tools/src/commands/packages.dart:140:7)
+<asynchronous suspension>
+#3      PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:175:5)
+<asynchronous suspension>
+#4      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1257:27)
+<asynchronous suspension>
+#5      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#6      CommandRunner.runCommand (package:args/command_runner.dart:209:13)
+<asynchronous suspension>
+#7      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:283:9)
+<asynchronous suspension>
+#8      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#9      FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:229:5)
+<asynchronous suspension>
+#10     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:64:9)
+<asynchronous suspension>
+#11     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#12     main (package:flutter_tools/executable.dart:91:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.7.1, on Microsoft Windows [版本 10.0.22621.1265], locale zh-CN)
+    • Flutter version 3.7.1 on channel stable at D:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 7048ed95a5 (4 weeks ago), 2023-02-01 09:07:31 -0800
+    • Engine revision 800594f1f4
+    • Dart version 2.19.1
+    • DevTools version 2.20.1
+    • Pub download mirror https://pub.flutter-io.cn
+    • Flutter download mirror https://storage.flutter-io.cn
+
+[✗] Windows Version (Unable to confirm if installed Windows version is 10 or greater)
+
+[!] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
+    • Android SDK at C:\Users\Rod\AppData\Local\Android\sdk
+    ✗ cmdline-tools component is missing
+      Run `path/to/sdkmanager --install "cmdline-tools;latest"`
+      See https://developer.android.com/studio/command-line for more details.
+    ✗ Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/docs/get-started/install/windows#android-setup for more details.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✗] Visual Studio - develop for Windows
+    ✗ Visual Studio not installed; this is necessary for Windows development.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[✓] Android Studio (version 2021.2)
+    • Android Studio at D:\android studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.12+7-b1504.28-7817840)
+
+[✓] Connected device (4 available)
+    • Pixel (mobile)    • 192.168.81.101:5555 • android-x64    • Android 11 (API 30)
+    • Windows (desktop) • windows             • windows-x64    • Microsoft Windows [版本 10.0.22621.1265]
+    • Chrome (web)      • chrome              • web-javascript • Google Chrome 110.0.5481.178
+    • Edge (web)        • edge                • web-javascript • Microsoft Edge 110.0.1587.56
+
+[!] HTTP Host Availability
+    ✗ HTTP host "https://cocoapods.org/" is not reachable. Reason: Failed to connect to host in 10 seconds
+
+! Doctor found issues in 4 categories.
+```

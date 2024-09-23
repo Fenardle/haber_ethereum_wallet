@@ -31,6 +31,13 @@ How to run tests
 $ flutter test
 ```
 
+### Demo
+Here are some visual demonstrations of how to use the wallet's key features:
+
+#### Importing a Mnemonic:
+![Importing a Mnemonic](https://github.com/Fenardle/haber_ethereum_wallet/blob/main/ui_gifs/import_mnemonic.gif)
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)

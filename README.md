@@ -32,10 +32,8 @@ $ flutter test
 ```
 
 ### Demo
-Here are some visual demonstrations of how to use the wallet's key features:
+[Click here to view demo GIFs folder](https://github.com/Fenardle/haber_ethereum_wallet/tree/main/ui_gifs)
 
-#### Importing a Mnemonic:
-![Importing a Mnemonic](https://github.com/Fenardle/haber_ethereum_wallet/blob/main/ui_gifs/import_mnemonic.gif)
 
 
 ## License
